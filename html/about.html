@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/about-style.css" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Nunito&display=swap" rel="stylesheet">
+    <script src="../js/colorpicker.js"></script>
     <script src="https://kit.fontawesome.com/3753e4a20c.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="pickColor()">
 
 
     <header>
@@ -35,13 +36,16 @@
             <div class='description-wrapper'>
                 <img class='display-picture' src='../assets/img/dp_400x400.jpg' />
                 <div class='hi'>
-                    <h1>Yo! I'm Prabhav</h1>
+                    <h1>Yo! I'm <span class='pick'>Prabhav Bhatnagar</span></h1>
                 </div>
                 <div class='about-content'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies mi eget mauris pharetra et. Dolor purus non enim praesent elementum facilisis. Nullam eget felis</p>
-                    <p>Eget nunc lobortis mattis aliquam faucibus. Amet consectetur adipiscing elit pellentesque habitant morbi. Purus viverra accumsan in nisl. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Ac auctor augue mauris</p>
-                    <p>Augue neque gravida. Nisi scelerisque eu ultrices vitae auctor eu augue. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. In mollis nunc sed id semper risus in hendrerit gravida. Pellentesque adipiscing
-                        commodo elit at imperdiet dui accumsan sit. Mi bibendum neque egestas congue quisque egestas diam in.</p>
+                    <p>I am currently a final year student at SRM IST, finishing my B.Tech in Information Technology. I love to design and develop games because they have the potential to incorporate various other media, culminating in the <span class='pick'>most powerful
+                        tool of expression.</span></p>
+                    <p>I want to <span class='pick'>tell stories and share experiences</span> through various mediums. Be it the raging competition of a card game, the surreal immersion of virtual reality or the very aesthetic joy of seeing <span class='pick'>harmonious colors</span>,
+                        it excites and drives my creative passion.</p>
+                    <p>I enjoy playing the guitar, cooking, and <span class='pick'>petting dogs</span>! I’m a big fan of <span class='pick'>Calvin and Hobbes</span>, its communication of ideas through the imagination and naivety of a child is one of my biggest
+                        creative influences. I draw inspiration from all nooks and crannies from media like games, anime, and movies to mundane everyday experiences, all of it contributes to my vision.
+                    </p>
                 </div>
         </section>
         <hr/>
