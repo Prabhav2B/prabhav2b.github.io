@@ -12,17 +12,18 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Nunito&display=swap" rel="stylesheet" />
+    <script src="js/colorpicker.js"></script>
     <script src="https://kit.fontawesome.com/3753e4a20c.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="pickColor()">
 
     <header>
         <nav class='topnav'>
             <ul>
-                <li class="current_nav"><a href='index.html'>work</a></li>
+                <li class="current_nav "><a href='index.html'>work</a></li>
                 <li><a href='html/about.html'>about</a></li>
-                <li><a href="https://www.medium.com/@prabhav_b" target="_blank">blog</a></li>
+                <li><a href="https://www.medium.com/@prabhav_b " target="_blank ">blog</a></li>
                 <li><a href='html/contact.html'>contact</a></li>
             </ul>
         </nav>
@@ -30,8 +31,8 @@
     <div class='page'>
         <section class='description'>
             <div class='description-wrapper'>
-                <p class='intro'>Yo! I'm Prabhav, a Game Designer and Developer currently in my final year at SRM IST. I enjoy working on Extended Reality, Human-Computer Interaction, Product Design and all sorts of interactive media in conjunction with Game Design and
-                    Dev
+                <p class='intro'>Yo! I'm <span class='pick'>Prabhav</span>, a <span class='pick'>Game Designer and Developer</span> currently in my final year at SRM IST. I enjoy working on <span class='pick'>Extended Reality</span>, <span class='pick'>Human-Computer Interaction</span>,
+                    <span class='pick'>Product Design</span> and all sorts of interactive media in conjunction with Game Design and Dev
                 </p>
             </div>
         </section>
@@ -84,14 +85,14 @@
         <footer>
             <nav class='bottomnav'>
                 <ul>
-                    <li><a href='mailto:prabhav2b@gmail.com' target='_blank'><i class="fas fa-envelope"></i></a></li>
-                    <li><a href='https://www.twitter.com/prabby_patty/' target='_blank'><i class="fab fa-twitter"></i></a></li>
-                    <li><a href='https://www.linkedin.com/in/prabhavbhatnagar/' target='_blank'><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href='https://prabby-patty.itch.io/' target='_blank'><i class="fab fa-itch-io"></i></a></li>
-                    <li><a href='https://github.com/prabhav2b' target='_blank'><i class="fab fa-github"></i></a></li>
+                    <li><a href='mailto:prabhav2b@gmail.com' target='_blank'><i class="fas fa-envelope "></i></a></li>
+                    <li><a href='https://www.twitter.com/prabby_patty/' target='_blank'><i class="fab fa-twitter "></i></a></li>
+                    <li><a href='https://www.linkedin.com/in/prabhavbhatnagar/' target='_blank'><i class="fab fa-linkedin "></i></a></li>
+                    <li><a href='https://prabby-patty.itch.io/' target='_blank'><i class="fab fa-itch-io "></i></a></li>
+                    <li><a href='https://github.com/prabhav2b' target='_blank'><i class="fab fa-github "></i></a></li>
                 </ul>
             </nav>
-            <p class='signature'><i class="fas fa-copyright"></i> Prabhav Bhatnagar 2019</p>
+            <p class='signature'><i class="fas fa-copyright "></i> Prabhav Bhatnagar 2019</p>
         </footer>
     </div>
 </body>
