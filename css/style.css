@@ -84,7 +84,7 @@
         z-index: -100;
         position: relative;
         overflow: hidden;
-        margin-top: 40px;
+        /* margin-top: 40px; */
         letter-spacing: .06em;
     }
     
@@ -114,7 +114,7 @@
     }
     
     .intro {
-        font-size: 1.5em;
+        font-size: 1.6em;
         font-weight: 500;
         line-height: 1.6em;
         word-spacing: 0.35em;
@@ -145,7 +145,7 @@
     .card-item {
         /* border: 1px dotted red; */
         width: 300px;
-        height: 400px;
+        height: 430px;
         position: relative;
         overflow: hidden;
         border-radius: 5px;
@@ -165,8 +165,8 @@
     
     .card-item p {
         padding-top: 5px;
-        padding-right: 5px;
-        padding-left: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
         text-align: justify;
     }
     
@@ -223,6 +223,12 @@
         text-align: center;
         padding-bottom: 20px;
         text-shadow: 0 0px 5px rgba(0, 0, 0, .6);
+    }
+    
+    @media only screen and (max-width: 320px) {
+        .intro {
+            font-size: 1.3em;
+        }
     }
     
     @media only screen and (min-width: 961px) {
