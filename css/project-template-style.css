@@ -3,17 +3,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20% 7% 20% 7%;
+    margin: 20% 7% 20% 7%;
+}
+
+.img-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .banner {
-    display: block;
+    object-fit: cover;
     width: 100%;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    /* border: 1px solid red; */
-    box-shadow: 0 2.5px 5px 0 rgba(0, 0, 0, .6);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .6);
 }
 
 .title h1 {
@@ -66,8 +71,27 @@
     color: rgb(195, 195, 195)
 }
 
+.main-article p {
+    padding-bottom: 10px;
+}
+
 .main-article h2 {
     padding-bottom: 20px;
+    color: rgb(235, 235, 235)
+}
+
+.main-article div {
+    padding-bottom: 40px;
+}
+
+.main-article a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.main-article a:hover {
+    color: inherit;
+    text-decoration: underline;
 }
 
 .project-navbar {
@@ -81,6 +105,11 @@
 .project-navbar a {
     color: inherit;
     text-decoration: none;
+}
+
+.project-navbar a:hover {
+    color: inherit;
+    text-decoration: underline;
 }
 
 .project-navbar a:hover {
@@ -100,7 +129,7 @@
 
 @media only screen and (min-width: 961px) {
     .title {
-        padding: 10% 7% 5% 7%;
+        margin: 7% 7% 7% 7%;
     }
     .title h1 {
         font-size: 2em;
