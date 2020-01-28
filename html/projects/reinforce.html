@@ -93,12 +93,19 @@
                         technique. Toy-Test-Trial. </p>
                 </div>
 
+                <figure>
+                    <img class='para-img' src='../../assets/img/reinforce-images/reinforce-ideation.jpg' style="width: 100%; margin-left: 5%;">
+                    <figcaption>Our greenboard during early stages of ideation.</figcaption>
+                </figure>
+
                 <div class='para'>
                     <h2>Break it down.</h2>
                     <p>Let’s talk a bit about Reinforcement Learning and Imitation Learning.</p>
-                    <p><strong>Reinforcement Learning</strong>, in layman terms, is the training of an agent to take actions informed by the observations from the environment and receiving an appropriate reward in response. It must learn to perform actions
-                        that maximize the cumulative reward, thus leading it to its desired goal.</p>
-                    <p><strong>Imitation Learning</strong>, on the other hand, is best summarized as ‘monkey see, monkey do’. It works the principle of behavioral cloning which is irrespective of rewards.</p>
+                    <p>
+                        <h4>Reinforcement Learning</h4>In layman terms, is the training of an agent to take actions informed by the observations from the environment and receiving an appropriate reward in response. It must learn to perform actions that maximize
+                        the cumulative reward, thus leading it to its desired goal.</p>
+                    <p>
+                        <h4>Imitation Learning</h4>On the other hand, is best summarized as ‘monkey see, monkey do’. It works the principle of behavioral cloning which is irrespective of rewards.</p>
                     <p>We theorized that to its core, the information the agent needed to learn was </p>
                     <ul>
                         <li>Its translational information (XYZ)</li>
@@ -117,6 +124,11 @@
 
                     <p><em> Note: roll is redundant owing to symmetry.</em></p>
                 </div>
+
+                <figure>
+                    <img class='para-img' src='../../assets/img/reinforce-images/paddle.gif'>
+                    <figcaption>The agent figuering out how to keep bouncing the ball.</figcaption>
+                </figure>
 
                 <div class='para'>
                     <h2>Experiment setup</h2>
@@ -163,11 +175,24 @@
                     <h2>Results:</h2>
 
                     <p>Here is an overview of the project. I have also provided videos for the individual performances of all the models!</p>
+
                     <p>Here is the performance of the Control Model with 5 degrees of freedom. As expected, it failed to learn the task properly due to the high complexity of the problem.</p>
+                    <figure>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/RHKeNNBPXxo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </figure>
                     <p>Here is the performance of the model when given only 3 degrees of freedom (Experimental Model 2). As expected, it has learned the task completely due to the low complexity of the problem.</p>
+                    <figure>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JJnAn72WoL4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </figure>
                     <p>Here is the performance of the novel model (Experimental model 3) when given 5 degrees of freedom. It has learned the complex task with the same level of performance as humans when given the same task to perform in Virtual Reality.</p>
+                    <figure>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/QIsP0ibN7lk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </figure>
                     <p>And here is a video of the training process, this particular video is training the rotational brain with IL, which would then act simultaneously with the RL brain to function as a whole and complete this high complexity task efficiently
                         with minimum training.</p>
+                    <figure>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/LAQrX3Z0LDg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </figure>
                 </div>
 
                 <div class='para'>
@@ -184,7 +209,22 @@
 
                 <div class='div'>
                     <h2>Impact</h2>
-                    <p>Bruh won the silver medal and represented at India HCI.</p>
+                    <p>Elucidate Implications</p>
+                </div>
+
+                <div class='div'>
+                    <h2>Achievement</h2>
+                    <p>Here is my teammate <a href="https://www.parharyugvir.com/" target="_blank">Yuvir Parhar</a> showcasing our work as a poster presentation at IndiaHCI 2019 and this work won Silver at SRM Research Endeavour.</p>
+                    <div class="img-col">
+                        <figure class='img-adj'>
+                            <img class='para-img' width="560" height="315" src='../../assets/img/reinforce-images/tugvir.jpeg'>
+                            <figcaption>Tugvir looking very smug.</figcaption>
+                        </figure>
+                        <figure class='img-adj'>
+                            <img class='para-img' width="560" height="315" src='../../assets/img/reinforce-images/poster.jpg'>
+                            <figcaption>Our poster in it's full glory.</figcaption>
+                        </figure>
+                    </div>
                 </div>
 
                 <div class='div'>

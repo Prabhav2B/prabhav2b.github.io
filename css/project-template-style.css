@@ -6,11 +6,13 @@
     margin: 20% 7% 20% 7%;
 }
 
-.img-container {
+figure {
     width: 100%;
     position: relative;
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 6px;
+    align-items: center;
+    margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 30px;
 }
@@ -19,6 +21,23 @@
     object-fit: cover;
     width: 100%;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .6);
+}
+
+.para-img {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    object-fit: cover;
+    width: 80%;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .6);
+}
+
+figcaption {
+    margin-bottom: 5%;
+    display: block;
+    text-align: center;
+    font-size: .8em;
+    color: rgba(195, 195, 195, 0.609)
 }
 
 .title h1 {
@@ -76,14 +95,14 @@
 }
 
 .main-article h2 {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     color: rgb(235, 235, 235)
 }
 
 .main-article h3 {
     padding-top: 15px;
-    padding-bottom: 15px;
-    color: rgb(235, 235, 235)
+    padding-bottom: 30px;
+    color: rgba(235, 235, 235, 0.911)
 }
 
 .main-article h4 {
@@ -97,13 +116,26 @@
     padding-left: 15px;
 }
 
+.main-article ol {
+    margin: .5em;
+}
+
+.main-article li {
+    padding-bottom: .85em;
+}
+
+.main-article ol ol {
+    margin: .8em;
+    margin-left: 1.2em;
+}
+
 .main-article div {
     padding-bottom: 40px;
 }
 
 .main-article a {
     color: inherit;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .main-article a:hover {
@@ -144,6 +176,20 @@
     justify-content: space-between;
 }
 
+iframe {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    width: 80%;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .6);
+}
+
+.img-col {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
 @media only screen and (min-width: 961px) {
     .title {
         margin: 7% 7% 7% 7%;
@@ -161,6 +207,10 @@
         padding-bottom: 50px;
         width: 60%;
         margin: 0 auto;
+        font-size: 1.4em;
+        letter-spacing: .1em;
+        word-spacing: .3em;
+        line-height: 1.2em;
     }
     .project-navbar {
         font-size: 1.6em;
@@ -171,5 +221,11 @@
 @media only screen and (min-width: 451px) and (max-width: 960px) {
     .title {
         padding: 10% 7% 5% 7%;
+    }
+    .main-article {
+        font-size: 1.3em;
+        letter-spacing: .1em;
+        word-spacing: .25em;
+        line-height: 1.2em;
     }
 }
