@@ -87,10 +87,11 @@
 
                 <div class='para'>
                     <h2>Initial Research</h2>
-                    <p>We started off by exploring algorithms and experiments which would be able to achieve this goal. We settled on using the ml-agents package by Unity for it would allow us to easily set up our experiment and explore Reinforcement Learning
-                        and Imitation Learning. As an abstract idea, we planned on creating a VR table tennis game that we would teach an AI agent through demonstration and once trained to an appropriate level, we would test its performance against humans.</p>
+                    <p>We started off by exploring algorithms and experiments which would be able to achieve this goal. We settled on using the <span class='pick'>ml-agents</span> package by Unity for it would allow us to easily set up our experiment and
+                        explore <span class='pick'>Reinforcement Learning</span> and <span class='pick'>Imitation Learning</span>. As an abstract idea, we planned on creating a VR table tennis game that we would teach an AI agent through demonstration
+                        and once trained to an appropriate level, we would test its performance against humans.</p>
                     <p>That was easier said them, after a quick prototype, we realized that the idea would be too complicated to execute, so we decided to scale down and fundamentally think about the problem. It was here that I developed my 3 phase implementation
-                        technique. Toy-Test-Trial. </p>
+                        technique. <span class='pick'>Toy</span>-<span class='pick'>Test</span>-<span class='pick'>Trial</span>. </p>
                 </div>
 
                 <figure>
@@ -102,10 +103,10 @@
                     <h2>Break it down.</h2>
                     <p>Let’s talk a bit about Reinforcement Learning and Imitation Learning.</p>
                     <p>
-                        <h4>Reinforcement Learning</h4>In layman terms, is the training of an agent to take actions informed by the observations from the environment and receiving an appropriate reward in response. It must learn to perform actions that maximize
+                        <h4>Reinforcement Learning</h4>In layman terms, is the training of an agent to take actions informed by the observations from the environment and receiving an appropriate <span class='pick'>reward</span > in response. It must learn to perform actions that maximize
                         the cumulative reward, thus leading it to its desired goal.</p>
                     <p>
-                        <h4>Imitation Learning</h4>On the other hand, is best summarized as ‘monkey see, monkey do’. It works the principle of behavioral cloning which is irrespective of rewards.</p>
+                        <h4>Imitation Learning</h4>On the other hand, is best summarized as <span class='pick'>‘monkey see, monkey do’</span>. It works the principle of behavioral cloning which is irrespective of rewards.</p>
                     <p>We theorized that to its core, the information the agent needed to learn was </p>
                     <ul>
                         <li>Its translational information (XYZ)</li>
@@ -117,12 +118,12 @@
                     </ul>
                     <p>So let’s break this down to toy, test, and trial</p>
                     <ul>
-                        <li>For the toy task, we give the agent 2 degrees of freedom (XZ).</li>
-                        <li>For the test task, we give the agent 3 degrees of freedom (XYZ).</li>
-                        <li>For the trial task, we give the agent 5 degrees of freedom (XYZ pitch and roll).</li>
+                        <li>For the <span class='pick'>toy</span> task, we give the agent <span class='pick'>2 degrees of freedom (XZ)</span>.</li>
+                        <li>For the <span class='pick'>test</span> task, we give the agent <span class='pick'>3 degrees of freedom (XYZ)</span>.</li>
+                        <li>For the <span class='pick'>trial</span> task, we give the agent <span class='pick'>5 degrees of freedom (XYZ pitch and roll)</span>.</li>
                     </ul>
 
-                    <p><em> Note: roll is redundant owing to symmetry.</em></p>
+                    <p><em> Note: yaw is redundant owing to symmetry.</em></p>
                 </div>
 
                 <figure>
@@ -132,25 +133,26 @@
 
                 <div class='para'>
                     <h2>Experiment setup</h2>
-                    <p> The Virtual Training setup contains a paddle that must learn to continuously bounce against it a pong ball without letting it drop to the floor. The paddle has a Degree of Freedom of 5, it can translate in X, Y and Z axes ( 3 units
-                        in all the respective directions ), and it has the ability to perform pitch and roll (Rotate along X, and Y axes). There are three important colliders present, one at the ball, another on the paddle and the last one acts as an
-                        invisible collider above the checkerboard ground. The ball is instantiated randomly (range of (-1 to 1)) above the XY plane at various angles to the plane. Rewards are provided in contact with the colliders (see "Experiment Design").
-                        If the ball touches the ground, i.e, the paddle misses to hit the ball, it is respawned and the score, as well as agent reward, is set to 0.</p>
+                    <p> The Virtual Training setup contains a paddle that must learn to continuously bounce against it a pong ball without letting it drop to the floor. The paddle has a Degree of Freedom of 5, it can translate in X, Y and Z axes (3 units
+                        in all the respective directions), and it has the ability to perform pitch and roll (Rotate along X, and Y axes). There are <span class='pick'>4 important colliders</span> present, on the <span class='pick'>ball</span>, on the
+                        <span class='pick'>paddle</span>, on the <span class='pick'>ground</span> and an <span class='pick'>invisible collider</span> above the a certain threshold to register juggling. The ball is instantiated randomly (range of (-1 to
+                        1)) above the XY plane at various angles to the plane. Rewards are provided in contact with the colliders (see "Experiment Design").
+                    </p>
                     <p>The agent takes an array of five elements as controls. The elements in order are X, Y, Z axes, pitch, and roll with each being able to take a value from -1 to +1. The paddle makes constrained movements ranging from -3 to 3 units in
                         X and Z axes, 0 to 3 in the Y-axis, and the pitch and roll are not constrained. In the VR environment, for Imitation learning, the controls are mapped to the Oculus hand Controllers.</p>
                     <h4>There are a total of 15 states:</h4>
                     <ul>
-                        <li>The position vector of the paddle, i.e, x[1], y[2], z[3] coordinates of the paddle.</li>
-                        <li>The position vector of the ball, i.e, x[4], y[5], z[6] coordinates of the ball.</li>
-                        <li>The velocity of the paddle, i.e, a vector3 containing magnitude[7] and direction[8 9 10].</li>
-                        <li>The velocity of the ball, i.e, a vector3 containing magnitude[11] and direction[12 13 14].</li>
-                        <li>The distance between the paddle and the ball[15].</li>
+                        <li>The position vector of the paddle, i.e, <span class='pick'>x[1]</span>,<span class='pick'> y[2]</span>, <span class='pick'>z[3]</span> coordinates of the paddle.</li>
+                        <li>The position vector of the ball, i.e, <span class='pick'>x[4]</span>, <span class='pick'>y[5]</span>, <span class='pick'>z[6] </span>coordinates of the ball.</li>
+                        <li>The velocity of the paddle, i.e, a vector3 containing <span class='pick'>magnitude[7]</span> and <span class='pick'>direction[8 9 10]</span>.</li>
+                        <li>The velocity of the ball, i.e, a vector3 containing <span class='pick'>magnitude[11]</span> and <span class='pick'>direction[12 13 14]</span>.</li>
+                        <li>The distance between the paddle and the <span class='pick'>ball[15]</span>.</li>
                     </ul>
                     <h4>The rules for the awarding rewards are:</h4>
                     <ul>
-                        <li>+5 rewarded when the ball hits ”PositiveRewardZone” (a collider above the ground plane).</li>
-                        <li>-0.1 if the ball is being balanced on the paddle and not being bounced.</li>
-                        <li>-1 if the ball hits the ground</li>
+                        <li><span class='pick'>+5</span> rewarded when the ball hits ”PositiveRewardZone” (a collider above the ground plane).</li>
+                        <li><span class='pick'>-0.1</span> for every frame the ball is being balanced on the paddle and not being jugled.</li>
+                        <li><span class='pick'>-1</span> if the ball hits the ground</li>
                     </ul>
                     <p>The reward is set to 0 once the ball hits the ground and the environment is reset</p>
 
@@ -163,36 +165,36 @@
                         which took 1 million iterations for subpar performance and a maximum score of 3.</p>
 
                     <h3>Experimental Model 2:</h3>
-                    <p>This model was also trained for 3 dof and differed from Experimental Model 1 in that it made use of Recurrent Neural Networks in the form of ”Long Short Term Memory”(LSTM) architecture. It performed exceptionally better than experimental
-                        model 1".</p>
+                    <p>This model was also trained for 3 dof and differed from Experimental Model 1 in that it made use of Recurrent Neural Networks in the form of <span class='pick'>"Long Short Term Memory"(LSTM)</span> architecture. It performed exceptionally
+                        better than experimental model 1.</p>
 
                     <h3>Experimental Model 3:</h3>
-                    <p>A third model is a novel approach wherein training of two different models is done, one akin to ”Experimental Model 2” and the other that learns the Rotation actions (pitch and roll)via demonstrations provided by the trainer, using
-                        the Virtual Reality controller to map the rotation input. Then, we use the brains simultaneously to act on the agent to perform the task.</p>
+                    <p>A third model is a novel approach wherein training of <span class='pick'>two different models</span> is done, one akin to ”Experimental Model 2” and the other that learns the Rotation actions (pitch and roll) via demonstrations provided
+                        by the trainer, using the Virtual Reality controller to map the rotation input. Then, we use the brains simultaneously to act on the agent to perform the task.</p>
                 </div>
 
                 <div class='para'>
                     <h2>Results:</h2>
 
                     <p>Here is an overview of the project. I have also provided videos for the individual performances of all the models!</p>
-
-                    <p>Here is the performance of the Control Model with 5 degrees of freedom. As expected, it failed to learn the task properly due to the high complexity of the problem.</p>
                     <figure>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/RHKeNNBPXxo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </figure>
-                    <p>Here is the performance of the model when given only 3 degrees of freedom (Experimental Model 2). As expected, it has learned the task completely due to the low complexity of the problem.</p>
+                    <p>Here is the performance of the Control Model with 5 degrees of freedom. As expected, it failed to learn the task properly due to the <span class='pick'>high complexity</span> of the problem.</p>
                     <figure>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/JJnAn72WoL4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </figure>
-                    <p>Here is the performance of the novel model (Experimental model 3) when given 5 degrees of freedom. It has learned the complex task with the same level of performance as humans when given the same task to perform in Virtual Reality.</p>
+                    <p>Here is the performance of the model when given only 3 degrees of freedom (Experimental Model 2). As expected, it has learned the task completely due to the <span class='pick'>low complexity</span> of the problem.</p>
                     <figure>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/QIsP0ibN7lk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </figure>
-                    <p>And here is a video of the training process, this particular video is training the rotational brain with IL, which would then act simultaneously with the RL brain to function as a whole and complete this high complexity task efficiently
-                        with minimum training.</p>
+                    <p>Here is the performance of the novel model (Experimental model 3) when given 5 degrees of freedom. It has learned the <span class='pick'>complex task with an improved level of performance</span> when given the same task to perform
+                        in Virtual Reality.</p>
                     <figure>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/LAQrX3Z0LDg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </figure>
+
+
                 </div>
 
                 <div class='para'>
@@ -209,12 +211,14 @@
 
                 <div class='div'>
                     <h2>Impact</h2>
-                    <p>Elucidate Implications</p>
+                    <p>The results could enable the prospect of AI as an intermediary, where specialized tasks could be taught to AI agents that would in turn teach other actors. Industries which would reap great benefit from this research include but are
+                        not limited to Sports, Video Games and Robotics.</p>
                 </div>
 
                 <div class='div'>
                     <h2>Achievement</h2>
-                    <p>Here is my teammate <a href="https://www.parharyugvir.com/" target="_blank">Yuvir Parhar</a> showcasing our work as a poster presentation at IndiaHCI 2019 and this work won Silver at SRM Research Endeavour.</p>
+                    <p>Here is my teammate <span class='pick'><a href="https://www.parharyugvir.com/" target="_blank">Yuvir Parhar</a></span> showcasing our work as a poster presentation at <span class='pick'>IndiaHCI 2019</span> and the work also won
+                        <span class='pick'>Silver</span> at <span class='pick'>SRM Research Day</span>.</p>
                     <div class="img-col">
                         <figure class='img-adj'>
                             <img class='para-img' width="560" height="315" src='../../assets/img/reinforce-images/tugvir.jpeg'>

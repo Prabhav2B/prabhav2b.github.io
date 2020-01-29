@@ -60,13 +60,13 @@
                 <div class='proj-intro'>
                     <h2>Introduction</h2>
                     <h3>Problem Statement</h3>
-                    <p>Today, 60% of the open skilled production positions in the manufacturing industry are unfulfilled. Despite automation, skilled workers will still be needed to apply problem-solving capabilities, perform analysis and manage production.
-                        One reason manufacturers are finding it difficult to fill positions, both skilled and unskilled, is the lack of trade school opportunities for young women and men.</p>
+                    <p>Today, <span class='pick'>60% of the open skilled production positions in the manufacturing industry are unfulfilled</span>. Despite automation, skilled workers will still be needed to apply problem-solving capabilities, perform analysis
+                        and manage production. One reason manufacturers are finding it difficult to fill positions, both skilled and unskilled, is the lack of trade school opportunities for young women and men.</p>
                     <h3>The Solution</h3>
-                    <p>Through MaTrEx, short for Maintenance and Training through Extended Reality, we proposed the development of robust Virtual Reality training programs, offering a way for skilled professionals to train on-site technicians and to perform
-                        remote diagnostics over Virtual Reality, potentially in real-time. To achieve this, we make use of digital twins - a virtual model of a real machine with data collected through IoT devices. The professionals can use the immersive
-                        effect to explain the instrument’s working or help pinpoint the cause of a malfunction, thus making it a derivative of Assisted Reality powered by Digital Twins. The inception of the project took place during Accenture’s Hack The
-                        Reality Hackathon.</p>
+                    <p>Through MaTrEx, short for <span class='pick'>Maintenance and Training through Extended Reality</span>, we proposed the development of robust Virtual Reality training programs, offering a way for skilled professionals to train on-site
+                        technicians and to perform remote diagnostics over Virtual Reality, potentially in real-time. To achieve this, we make use of <span class='pick'>digital twins</span> - a virtual model of a real machine with data collected through
+                        IoT devices. The professionals can use the immersive effect to explain the instrument’s working or help pinpoint the cause of a malfunction, thus making it a <span class='pick'>derivative of Assisted Reality</span> powered by Digital
+                        Twins. The inception of the project took place during Accenture’s Hack The Reality Hackathon.</p>
                 </div>
 
                 <figure>
@@ -123,12 +123,12 @@
                     <h2>How they all fit together</h2>
 
                     <ul>
-                        <li>The prototype comprises a room in Virtual Reality that is simple, spacious, and free of distractions.</li>
-                        <li>The room is shared by a trainer and N trainees. They can remotely join the room through the Internet.</li>
-                        <li>A “digital twin”, a 3D model resembling and connected to a machine in the real world, also exists in this room.</li>
+                        <li>The prototype comprises a room in Virtual Reality that is <span class='pick'>simple</span>, <span class='pick'>spacious</span>, and <span class='pick'>free of distractions</span>.</li>
+                        <li>The room is shared by a trainer and N trainees. They can <span class='pick'>remotely join</span> the room through the application.</li>
+                        <li>A <span class='pick'>“digital twin”</span>, a 3D model resembling and connected to a machine in the real world, also exists in this room.</li>
                         <li>As the trainer interacts with the digital twin, the trainees can observe and also interact with it.</li>
-                        <li>This can also facilitate ad-hoc remote maintenance by streaming diagnostic data in real-time using IoT.</li>
-                        <li>Each session can be recorded and replayed for re-training or reference.</li>
+                        <li>This can also facilitate <span class='pick'>ad-hoc remote maintenance</span> by streaming diagnostic data in real-time using IoT.</li>
+                        <li>Each session can be <span class='pick'>recorded and replayed</span> for re-training or reference.</li>
                     </ul>
                 </div>
 
@@ -140,22 +140,22 @@
                 <div class='para'>
                     <h2>Implementation</h2>
                     <h3>Virtual Realy Environment</h3>
-                    <p>The Virtual Reality Environment was designed my Adhyan Mall. We had to experiment a lot with the size and scale to make sure it was comfortable for the actors and created a productive learning environment. We built the VR interactions
-                        on top of OpenVR for its multi-vendor support, meaning that in the multi-actor scenario, there would be no restriction on the hardware being used. One actor can use a top of the line Occulus Vive while the other can use a budget
-                        Windows MR and the application would comply.</p>
+                    <p>The Virtual Reality Environment was designed my Adhyan Mall. We had to experiment a lot with the size and scale to make sure it was <span class='pick'>comfortable</span> for the actors and created a <span class='pick'>productive learning environment</span>.
+                        We built the VR interactions on top of <span class='pick'>OpenVR</span> for its <span class='pick'>multi-vendor support</span>, meaning that in the multi-actor scenario, there would be no restriction on the hardware being used.
+                        One actor can use a top of the line Occulus Vive while the other can use a budget Windows MR and the application would comply.</p>
 
                     <h3>The Networking Module</h3>
-                    <p>The networking module was buit on top of the Photon SDK for Unity. This was my first time working with a networking SDK and it turned out to be a great learning opportunity. I built a small prototype sans the VR functionality to test
-                        out the SDK. The most important thing I noted was that Photon spawn shared network entities in a network pool. So if I have a multiplayer character, it would exist on my system and on the network pool, and if another person on
-                        the same network as a shared entity, it would exist in his system and the pool. The action 2 entity actor 1 would see would be the data pulled from the pull.</p>
-                    <p>With that in mind, when I started to incorporate VR, a glaring problem arose. The OpenVR script that handles the VR functionality was a Singleton. That is, only one instance of such an entity could exist in a system. So whenever multiple
-                        such entities would be created on the network pool by actors for sharing, they would be deleted. This problem was solved by creating a dummy entity that would be a mimic for the VR entity and lacking the Singleton constraint, be
-                        able to exist in the pool.</p>
+                    <p>The networking module was buit on top of the <span class='pick'>Photon SDK</span> for Unity. This was my first time working with a networking SDK and it turned out to be a great learning opportunity. I built a small prototype sans
+                        the VR functionality to test out the SDK. The most important thing I noted was that Photon spawn shared network entities in a <span class='pick'>network pool</span>. So if I have a multiplayer character, it would exist on my system
+                        and on the network pool, and if another person on the same network as a shared entity, it would exist in his system and the pool. The action 2 entity actor 1 would see would be the data pulled from the pull.</p>
+                    <p>With that in mind, when I started to incorporate VR, a glaring problem arose. The OpenVR script that handles the VR functionality was a <span class='pick'>Singleton</span>. That is, only one instance of such an entity could exist in
+                        a system. So whenever multiple such entities would be created on the network pool by actors for sharing, they would be deleted. This problem was solved by creating a <span class='pick'>dummy entity</span> that would be a mimic
+                        for the VR entity and lacking the Singleton constraint, be able to exist in the pool.</p>
                     <p>With that problem solved, we had a functional networked VR.</p>
 
 
                     <h3>The IoT module</h3>
-                    <p>For the prototype, since we lacked proper equipment, we made a functioning proof of concept by using a heat-sensor with an Arduino and establishing a connection with unity using MQTT protocol. </p>
+                    <p>For the prototype, since we lacked proper equipment, we made a functioning proof of concept by using a heat-sensor with an Arduino and establishing a connection with unity using <span class='pick'>MQTT protocol</span>. </p>
 
                     <h3>User Interface and Dashboard</h3>
                     <p>We implemented a simple user interface and dashboard which would give actors the data in the VR environment in a graphical format.</p>
@@ -165,14 +165,15 @@
                 <div class='para'>
                     <h2>Features</h2>
                     <ul>
-                        <li>Training of (multiple) on-site workers on potentially different sites by remote professionals. Training in VR provides an effective learning experience by training people in the most realistic way possible, without the situation
-                            actually happening in real life. </li>
-                        <li>The database of these sessions can be revisited in VR for future reference. One key advantage of VR is that the sharing of virtual content can lead to more robust replication and representative sampling. A database of standardized
-                            content will allow the training of on-site workers more efficiently.
+                        <li><span class='pick'>Training</span> of (multiple) on-site workers on potentially different sites by remote professionals. Training in VR provides an effective learning experience by training people in the most realistic way possible,
+                            without the situation actually happening in real life. </li>
+                        <li>The database of these sessions can be revisited in VR for future reference. One key advantage of VR is that the sharing of virtual content can lead to more <span class='pick'>robust replication and representative sampling</span>.
+                            A database of standardized content will allow the training of on-site workers more efficiently.
                         </li>
-                        <li>Ad-hoc maintenance where a remote profession can review the digital twin with real-time data and provide guidance to the on-site workers. These sessions can even be recorded for a particular model for future reference and maintenance.</li>
-                        <li>A Pooling session where multiple professions get access to the digital twin and each follows their approach which is simulated and the optimal solution is implemented. Since it’s multiplayer, multiple numbers of on-site workers
-                            can also work on the model or get trained to work with the necessary parts of the model. </li>
+                        <li><span class='pick'>Ad-hoc maintenance</span> where a remote profession can review the digital twin with real-time data and provide guidance to the on-site workers. These sessions can even be recorded for a particular model for
+                            future reference and maintenance.</li>
+                        <li>A <span class='pick'>Pooling session</span> where multiple professions get access to the digital twin and each follows their approach which is simulated and the optimal solution is implemented. Since it’s multiplayer, multiple
+                            numbers of on-site workers can also work on the model or get trained to work with the necessary parts of the model. </li>
                     </ul>
                 </div>
 
@@ -184,10 +185,9 @@
                 <div class='para'>
                     <h2>Challenges</h2>
                     <ul>
-                        <li>The solution will have a considerable entrance fee, but this is an investment that will have returns in the ten folds.</li>
-                        <li>Considerable need for storage space and all.</li>
-                        <li>VR headsets</li>
-                        <li>Lack of actual machinery to test with</li>
+                        <li>We tested with the few VR headsets as we could get our hands on. We would like to stress test further how many people can feaseably learn in such a test environment.</li>
+                        <li>Considerable need for storage space for the projects and recording of VR sessions.</li>
+                        <li>Lack of actual machinery to test with a major constrant. We created a simulated proof of concept which should be feaseable to scale.</li>
                     </ul>
                 </div>
 
@@ -195,11 +195,12 @@
                 <div class='para'>
                     <h2>Results & Future Work</h2>
 
-                    <p>The experiment serves as a proof of concept that Virtual Reality can serve as a viable platform for demonstration training on the Industrial Scale.</p>
+                    <p>The experiment serves as a proof of concept that <span class='pick'>Virtual Reality can serve as a viable platform for demonstration training on the Industrial Scale</span>.</p>
                     <p>Future plans include conducting more in-depth user testing and analyzing their experience juxtaposed against conventional training methods.</p>
                     <p>Additionally, the team would like to explore the effect of various kinds of input mappings on the learning experience along with the possibility of the addition of more tactile elements like haptic responses to make the environment
-                        more immersive. Poster at India HCI</p>
-                    <p>Check out the project's <a href='https://github.com/Vivek-Raman/Acceture-Hackathon-butthisoneworks'>Github Repository</a>.</p>
+                        more immersive.</p>
+                    <p>The project and it's findings were accepted as a poster for presentation at <span class='pick'>IndiaHCI'19</span>.</p>
+                    <p>Check out the project's <span class='pick'><a href='https://github.com/Vivek-Raman/Acceture-Hackathon-butthisoneworks'>Github Repository</a></span>.</p>
 
                     <figure>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/UeloGbP3wS0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -209,9 +210,8 @@
 
                 <div class='div'>
                     <h2>Impact</h2>
-                    <h3>XR as a Service (XAAS)</h3>
-                    <p>Being modular in nature, the solution can be scaled on an industrial scale. The solution can be modeled as a Service that the industries can subscribe to for continual support and packaged at multiple layers based on the generalized
-                        needs of the industry.</p>
+                    <p>One of the biggest implication of this project is the possibilty of <span class='pick'>XR as a Service (XAAS)</span> paradigm. Being modular in nature, the solution can be scaled on an industrial scale. The solution can be modeled
+                        as a Service that the industries can subscribe to for continual support and packaged at multiple layers based on the generalized needs of the industry.</p>
                     <p>As an organization providing this solution, there will be continual returns for the services provided. As soon as one industry adopts it, it will trigger a trend in which every industry wanting a bite of the pie. </p>
                 </div>
 
