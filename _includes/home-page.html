@@ -1,0 +1,105 @@
+{% assign words_per_minute = site.words_per_minute | default: 200 %}
+
+<article class="home-page">
+
+    <h1 class="header">Home Page</h1>
+
+    {% for project in paginator.posts %}
+        {% if project.class == "project-template" and project.tags contains "highlight" %}
+            <article class="project-card-img {{ page.class }}{% unless project.cover %} no-image{% endunless %}">
+                {% if project.cover %}
+                    <img class="project-card-image" src="{{site.baseurl}}{{project.cover}}"> 
+                    <div class="project-card-content-img">
+                        <a class="project-card-content-link" href="{{ site.baseurl }}{{ project.url | remove_first: '/' }}">
+                            <header class="project-card-header-img">
+                                <h2 class="project-card-title-img">{{ project.title }}</h2>
+                            </header>
+                            <section class="project-card-excerpt-img">
+                                {% if project.excerpt %}
+                                    <p>{{ project.excerpt | strip_html | truncatewords: 33, "" }}</p>
+                                {% else %}
+                                    <p>{{ project.content | strip_html | truncatewords: 33, "" }}</p>
+                                {% endif %}
+                            </section>
+                            {% if project.tags.size > 0 %}
+                                {% for tag in project.tags %}
+                                    {% if forloop.index == project.tags.size %}
+                                    <span class="project-card-tags-img">{{ tag | capitalize }}</span>
+                                    {% else %}
+                                    <span class="project-card-tags-img">{{ tag | capitalize }}</span>
+                                    {% endif %}
+                                {% endfor %}
+                            {% endif %}
+                        </a>
+                        <footer class="project-card-meta">
+                            {% for author in site.data.authors %}
+                                {% if author[1].username == project.author %}
+                                    {% if author[1].picture %}
+                                    <img class="author-profile-image" src="{{ site.baseurl }}{{ author[1].picture }}" alt="{{ author[1].name }}" />
+                                    {% endif %}
+                                    <span class="project-card-author">
+                                        <a href="{{ site.baseurl }}author/{{ project.author }}/">{{ author[1].name }}</a>
+                                    </span>
+                                {% endif %}
+                            {% endfor %}
+                            <span class="reading-time">
+                                {% assign words = project.content | strip_html | number_of_words %}
+                                {% if words <= words_per_minute %}
+                                1 min read
+                                {% else %}
+                                {{ words | divided_by:words_per_minute }} min read
+                                {% endif %}
+                            </span>
+                        </footer>
+                    </div>
+                {% else %}
+                <div class="project-card-content">
+                    <a class="project-card-content-link" href="{{ site.baseurl }}{{ project.url | remove_first: '/' }}">
+                        <header class="project-card-header">
+                            {% if project.tags.size > 0 %}
+                                {% for tag in project.tags %}
+                                    {% if forloop.index == project.tags.size %}
+                                        <span class="project-card-tags">{{ tag | capitalize }}</span>
+                                    {% else %}
+                                    <span class="project-card-tags">{{ tag | capitalize }}</span>
+                                    {% endif %}
+                                {% endfor %}
+                            {% endif %}
+
+                            <h2 class="project-card-title">{{ project.title }}</h2>
+                        </header>
+                        <section class="project-card-excerpt">
+                            {% if project.excerpt %}
+                                <p>{{ project.excerpt | strip_html | truncatewords: 33, "" }}</p>
+                            {% else %}
+                                <p>{{ project.content | strip_html | truncatewords: 33, "" }}</p>
+                            {% endif %}
+                        </section>
+                    </a>
+                    <footer class="project-card-meta">
+                        {% for author in site.data.authors %}
+                            {% if author[1].username == project.author %}
+                                {% if author[1].picture %}
+                                <img class="author-profile-image" src="{{ site.baseurl }}{{ author[1].picture }}" alt="{{ author[1].name }}" />
+                                {% endif %}
+                                <span class="project-card-author">
+                                    <a href="{{ site.baseurl }}author/{{ project.author }}/">{{ author[1].name }}</a>
+                                </span>
+                            {% endif %}
+                        {% endfor %}
+                        <span class="reading-time">
+                            {% assign words = project.content | strip_html | number_of_words %}
+                            {% if words <= words_per_minute %}
+                            1 min read
+                            {% else %}
+                            {{ words | divided_by:words_per_minute }} min read
+                            {% endif %}
+                        </span>
+                    </footer>
+                </div>
+                {% endif %}
+            </article>
+        {% endif %}
+    {% endfor %}
+
+</article>

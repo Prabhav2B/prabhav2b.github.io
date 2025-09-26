@@ -1,0 +1,32 @@
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Prabhav
+tagline:          'My Personal Site'
+description:      'Temp description for a website by <a href="https://bsky.app/profile/probob.bsky.social" target="_blank">Prabhav</a>'
+url:              https://bsky.app/profile/probob.bsky.social
+baseurl:          /
+
+author:
+  name:           'Prabhav Bhatnagar'
+  url:            https://bsky.app/profile/probob.bsky.social
+
+
+
+paginate:         5
+
+
+# Custom vars
+version:          0.0.1
+
+github:
+  repo:           https://bsky.app/profile/probob.bsky.social
+
+  
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-paginate
