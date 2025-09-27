@@ -1,8 +1,10 @@
 
 .project-card-img
 {
-    position: relative;
-    box-shadow: -5px 5px 15px #888888;
+  width: 100%;
+  height: auto;
+  position: relative;
+  box-shadow: -5px 5px 15px #888888;
 }
 
 
@@ -25,7 +27,7 @@
   overflow: hidden;
 }
 
-@media (width < 78em) {
+@media (width < 70em) {
   .project-card-content-img {
     padding-left: 10px;
     padding-top: 10px;
@@ -40,7 +42,7 @@
     padding-right: 400px 
 }
 
-@media (width < 78em){
+@media (width < 70em){
   .project-card-excerpt-img > p
   {
       padding-right: 100px 
@@ -55,9 +57,22 @@
 .project-card-title-img{
   font-size:38pt;
   color: #fff;
-  
 }
 
+@media (width < 70em) {
+  .project-card-title-img{
+  font-size:20pt;
+}
+.project-card-tags-img{
+  display: none;
+  font-size:12pt;
+}
+.project-card-excerpt-img > p
+{
+    font-size:12pt;
+}
+
+}
 
 
 
