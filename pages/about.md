@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-<img style="float: right; width:55%; height:auto; padding-left: 50px" src="{{site.baseurl}}assets/images/me/P1040653.JPG">
+<img style="float: right; width:55%; height:auto; padding-left: 50px" src="/assets/images/me/P1040653.JPG">
 
 Hi! I'm *Prabhav* and this is the placeholder detailed about page
 
