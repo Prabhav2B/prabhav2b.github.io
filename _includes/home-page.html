@@ -2,7 +2,14 @@
 
 <article class="home-page">
 
-    <h1 class="header">Home Page</h1>
+    <h1 class="header">Welcome!</h1>
+
+    <p>Hey! You've stumbled upon by website which is very much work-in-progress right now lol. In the meantime, if you'd like to check my complete and up-to-date profile, check out my <a href="https://linkedin.com/in/prabhavbhatnagar" target="_blank">LinkedIn.</a> You can check out my games on <a href="https://prabby-patty.itch.io" target="_blank">Itch.</a> I'm also on <a href="https://bsky.app/profile/probob.bsky.social" target="_blank">Bluesky</a>, though I'm not as active as I'd like to be. You can contact by email at <a href="mailto:prabhav2b@gmail.com">prabhav2b@gmail.com</a>.</p>
+
+
+    <hr class="solid">
+
+    <h2 class="header">Highlight Projects</h2>
 
     {% for project in paginator.posts %}
         {% if project.class == "project-template" and project.tags contains "highlight" %}

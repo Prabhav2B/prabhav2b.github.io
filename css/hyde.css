@@ -240,6 +240,10 @@ a.sidebar-nav-item:focus {
   color: #aa759f;
 }
 
+body {
+  background-color: rgba(255, 246, 234, 0.819);
+}
+
 /* Brown */
 .theme-base-0f .sidebar {
   background-color: #8f5536;
