@@ -9,7 +9,7 @@ Have questions or suggestions? Feel free to [ask me on BlueSky](https://bsky.app
 
 Thanks for reading!
 
-1) Tell us about yourself*
+<!-- 1) Tell us about yourself*
 
 	If applying on behalf of a team, please also provide the above information about each team member, the team name, and information about everyone's roles.
 
@@ -23,4 +23,4 @@ Thanks for reading!
 	- made a 2022 sokoban game and learned how much of puzzle design is an intricate art and kinda fell in love with it
 	- the game went to competitions and i loved tested it, seeing people interact with it, having the Aha moments
 	- I wanted to expand and get into 3D dev, wanted to do something small and simple that I could complete and kept me motivated
-	- avoiding over innovation to keep a realistic course
+	- avoiding over innovation to keep a realistic course -->

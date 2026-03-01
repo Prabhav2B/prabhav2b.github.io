@@ -32,7 +32,7 @@
  */
 
 html {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
 }
 @media (min-width: 48em) {
   html {
@@ -85,7 +85,7 @@ html {
 
 /* Sidebar nav */
 .sidebar-nav {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .sidebar-nav-item {
   display: block;
@@ -112,6 +112,25 @@ a.sidebar-nav-item:focus {
     /* bottom: 3rem; */
     left:   1rem;
   }
+}
+
+.sidebar-fonts{
+  padding-bottom: 2px;
+}
+
+/* Style all font awesome icons */
+.fa-brands, .fa-solid {
+  padding-right: 5px;
+  font-size: 30px;
+  width: 42px;
+  text-align: left;
+  text-decoration: solid;
+  color: rgb(235, 235, 235);
+}
+
+/* Add a hover effect if you want */
+.fa-brands:hover, .fa-solid:hover {
+  opacity: 0.7;
 }
 
 
