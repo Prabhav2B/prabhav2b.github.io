@@ -56,7 +56,7 @@ html {
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
-  color: rgba(255,255,255,.5);
+  color: rgba(241, 241, 241, 0.756);
   background-color: #202020;
 }
 @media (min-width: 48em) {
@@ -252,12 +252,20 @@ a.sidebar-nav-item:focus {
 
 /* Magenta */
 .theme-base-0e .sidebar {
+  background-color: #a27eb4;
+}
+.theme-base-0e .content a,
+.theme-base-0e .related-posts li a:hover {
+  color: #a27eb4;
+}
+
+/* .theme-base-0e .sidebar {
   background-color: #aa759f;
 }
 .theme-base-0e .content a,
 .theme-base-0e .related-posts li a:hover {
   color: #aa759f;
-}
+} */
 
 body {
   background-color: rgba(255, 246, 234, 0.819);
