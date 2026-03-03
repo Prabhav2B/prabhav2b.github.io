@@ -5,7 +5,7 @@ title: Publications
 
 You can find all my publications here! I would like to add some details about each publication at some point but for now the drop downs are empty.
 
-You can check out my [Google Scholar Profile](https://scholar.google.com/citations?user=AmMe8_EAAAAJ&hl=en){:target="_blank"}. You if have any questions or things you would like to discuss, feel free to reach out to me at [prabhav.bhatnagar@aalto.fi](mailto:prabhav.bhatnagar@aalto.fi) or  [prabhav2b@gmail.com](mailto:prabhav2b@gmail.com).
+You can check out my [Google Scholar Profile](https://scholar.google.com/citations?user=AmMe8_EAAAAJ&hl=en){:target="_blank"}. You if have any questions or things you would like to discuss, feel free to reach out to me at [prabhav.bhatnagar@aalto.fi](mailto:prabhav.bhatnagar@aalto.fi) or [prabhav2b@gmail.com](mailto:prabhav2b@gmail.com).
 
 <br/>
 
