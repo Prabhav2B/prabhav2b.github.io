@@ -15,7 +15,7 @@ If you have any questions, feel free to reach out to me at [prabhav.bhatnagar@aa
 <object
   data="/assets/images/resume/Jake_ahh_Resume.pdf"
   type="application/pdf"
-  width="800"
+  width="700"
   height="1000"
 >
   <p>
