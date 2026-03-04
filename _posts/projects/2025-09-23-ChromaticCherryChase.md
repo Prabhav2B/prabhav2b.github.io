@@ -11,3 +11,15 @@ subclass: 'project'
 author: probob
 excerpt: A Celeste inspired platformer with a shapeshifting twist.
 ---
+
+<br/>
+
+## Summary
+
+*Chromatic Cherry Chase* is Celeste-inspired platformer game developed as a part of my master's thesis, investigating the relationship between cognitive demand in games and players' perception of music.
+
+**My roles**: Solo-dev, key skill highlights -- *Game Design, Level Design, Programming, Player Onboarding and Music Composition*.
+
+<!-- **Trailer**: [https://www.youtube.com/watch?v=ttKE8eWa6rA](https://www.youtube.com/watch?v=ttKE8eWa6rA) -->
+ 
+**Build**: [https://prabby-patty.itch.io/music-perception-experiment](https://prabby-patty.itch.io/music-perception-experiment){:target="_blank"} 

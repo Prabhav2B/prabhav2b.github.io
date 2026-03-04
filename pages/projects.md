@@ -7,8 +7,6 @@ title: Projects
   Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
 </p> -->
 
-Hi! I'm *Prabhav* and this is the placeholder detailed Projects
+Hey! I'm still setting up detailed posts for all my projects. If you would like to check out my highlight project, check them out at my  <a class="page-link" href="{{ site.baseurl | relative_url }}">home page</a>. 
 
-Have questions or suggestions? Feel free to [ask me on BlueSky](https://bsky.app/profile/probob.bsky.social){:target="_blank"}.
-
-Thanks for reading!
+You can also check out my [Itch.io](https://prabby-patty.itch.io){:target="_blank"} page to check out game I've worked on!

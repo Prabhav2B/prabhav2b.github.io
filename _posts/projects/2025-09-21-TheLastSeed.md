@@ -11,3 +11,15 @@ subclass: 'project'
 author: probob
 excerpt: A small exploration game where a dandelion seed tries to escape a cave.
 ---
+
+<br/>
+
+## Summary
+
+*The Last Seed* is a reimagination of the old-school flash game called soap bubble. You play as a fragile dandelion seed trying to escape a cave and make its way outside.
+
+**My roles**: *Game Design and Programming*.
+
+<!-- **Trailer**: [https://www.youtube.com/watch?v=VqpJ3DHl15o](https://www.youtube.com/watch?v=VqpJ3DHl15o){:target="_blank"} -->
+
+**Build**: [https://prabby-patty.itch.io/the-last-seed](https://prabby-patty.itch.io/the-last-seed){:target="_blank"}
