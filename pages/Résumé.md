@@ -4,7 +4,7 @@ title: Résumé
 ---
 
  
-Hey, find my résumé below! If you browser does not support an PDF viewer, you can [download the PDF.](/assets/images/resume/Jake_ahh_Resume.pdf){:target="_blank"}
+Hey, find my résumé below! If you browser does not support an PDF viewer, you can [download the PDF.](/assets/images/resume/Prabhav_Bhatnagar_Resume.pdf){:target="_blank"}
 
 If you have any questions, feel free to reach out to me at [prabhav.bhatnagar@aalto.fi](mailto:prabhav.bhatnagar@aalto.fi) or [prabhav2b@gmail.com](mailto:prabhav2b@gmail.com).
 
@@ -25,4 +25,4 @@ If you have any questions, feel free to reach out to me at [prabhav.bhatnagar@aa
   </p>
 </object> -->
 
-<object data="/assets/images/resume/Jake_ahh_Resume.pdf" width="1000" height="1000" type='application/pdf'></object>
+<object data="/assets/images/resume/Prabhav_Bhatnagar_Resume.pdf" width="1000" height="1000" type='application/pdf'></object>
