@@ -1,0 +1,175 @@
+---
+layout: project
+current: project
+cover: 'assets/gifs/spirit/sp_metro.gif'
+navigation: True
+title: Spirit Metro
+date: 2025-09-26
+tags: game, exploration, highlight
+class: project-template
+subclass: 'project'
+author: probob
+excerpt: Explore a supernatural metro and meet quirky characters.
+---
+
+<br/>
+
+<img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/gifs/spirit/sp_metro.gif">
+
+<br/>
+
+## Summary
+
+*Spirit Metro* is narrative exploration game set in a fantasy metro system. Your goal is to find your aunt and head to your very own spiritual station. The only problem is, there is no map to help you. So make notes to help you navigate, talk to the other spirit passengers, and do smaller tasks along the way. 
+
+**My roles**: *Game Design and Programming*.
+
+**Build**: [https://prabby-patty.itch.io/spirit-metro](https://prabby-patty.itch.io/spirit-metro){:target="_blank"}
+
+**Trailer**: [https://www.youtube.com/watch?v=VqpJ3DHl15o](https://www.youtube.com/watch?v=VqpJ3DHl15o){:target="_blank"}
+
+<iframe width="500" height="290" src="https://www.youtube.com/embed/VqpJ3DHl15o?si=SYq4yfhDzRETS_kD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<br/>
+
+## Introduction
+
+This project was initally a part of the Learning with Game Professionals (pilot) course at Aalto University. My personal goal was to build a game, network and explore the solo-preneur journey. Keeping my solo scope in mind, one big goal for me was to avoid over-innovating and prioritize feaseability. I choose to work on top of the foundation of game like Portal, The Talos Principle and Antichamber, while still expanding my skillset by exploring puzzle design, level design, technical art and lighting in 3D environments.
+
+<br/>
+
+<figure>
+    <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/sm/metro_ref_c.png">
+    <!-- <figcaption>Fig.1 - Like any good Portal-like, the project started with nailing boxes, buttons and doors.</figcaption> -->
+</figure>
+
+<figure>
+    <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/sm/metro_ref_a.png">
+    <figcaption>Fig.1 - Like any good Portal-like, the project started with nailing boxes, buttons and doors.</figcaption>
+</figure>
+
+<br/>
+
+## Mechanics
+
+I have developed a certain rule with puzzle game design at this point. If it doesn't work and scale on paper, it won't in engine either. So I started drafting mechanics, levels and interactions. I took a much more explorative appoach in this project, brainstorming engaging mechanics first instead of starting with a theme of narrative. 
+
+<br/>
+
+<figure>
+    <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/sm/metro_ref_b.jpg">
+    <figcaption>Fig.2 - Sketches of the early mechanics and levels.</figcaption>
+</figure>
+
+<br/>
+
+That being said, I keep feeling drawn to the idea of duality somehow. I ended up with the idea of puzzle mechanics being linked to cubes, and each cube would have 2 mechanics liked to it. This would led to designs where puzzles would have a good amount of depth and possibilities with minimal moving parts. 
+
+<br/>
+
+<figure>
+    <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/sm/Map_1.png">
+    <figcaption>Fig.3 - Expanding the levels and exploring the dual-interaction mechanics.</figcaption>
+</figure>
+
+<figure>
+    <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/sm/Map-without-top_3.png">
+    <figcaption>Fig.3 - Expanding the levels and exploring the dual-interaction mechanics.</figcaption>
+</figure>
+
+<br/>
+
+With a physics based puzzle like this one, I found building a sandbox where I could experiment and play around in to be super useful. This was not only great for technical and programming testing, but also to be curious and playful, letting gameplay ideas naturally emerge. 
+
+
+## Level Design 
+
+Aether-07 is my first foray into puzzle design in 3D and that brough with it its own set of challenges and learnings. From a pure puzzle design perspective, in 2D puzzles all the information is presented to the player the moment they see the level. The solving then becomes a task of identifying that sequence or manner of mechanical steps lead you to the solution. Meanwhile when designing in 3D, discovering the puzzle space itself is a explorative process. As a designer, I got to curate how each level is framed, what the player sees and in what perspective. 
+
+<br/>
+
+
+For example, in Figure 5, my core intent was for player to discover the inital setup for the level, the button, the (death) river and the door. Once they got familair with that setup, they would explore and find the cube that they have to use to solve the puzzle tucked in a wall. In this sense, level design in games becomes closely tied to UX design and progression. The levels need to be framed in a way that player can discover its various moving parts at a digestable rate. 
+
+<br/>
+
+<figure>
+    <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/sm/movement.gif">
+    <figcaption>Fig.5 - The levels were usually storyboarded and tested on figma before building in-engine. This allowed for better team communication and faster iterations.</figcaption>
+</figure>
+
+<br/>
+<figure>
+    <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/sm/pausechamp.gif">
+    <figcaption>Fig.5 - Translating a level from sketch to greybox and adding lighting.</figcaption>
+</figure>
+<br/>
+<figure>
+    <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/sm/jumpbug.gif">
+    <figcaption>Fig.5 - Translating a level from sketch to greybox and adding lighting.</figcaption>
+</figure>
+
+<br/>
+
+Additionally, coming back to 2D puzzle design, where once you have conceptualized solution, you can just try it out. But in 3D, there is an added "step" to the execution. You have to navigate the space, move-jump-fall, and participate in the solving of design. While this can lead to a much more engaging and immersive experience, poor execution can lead to fatigue and frustration. Thorughout my design I had to actively analyze my levels from this lens to make sure that I'm striking the right balance. 
+
+
+<br/>
+
+<figure>
+    <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/sm/train.gif">
+    <figcaption>Fig.6 - Exploring verticality in level design.</figcaption>
+</figure>
+
+<br/>
+
+<!-- Space as a narrative medium -->
+
+## Technical Art and Lighting
+
+This project also served as a great opportunity to develop my technical art skills. Since I was working as a solo-developer, I had to make the most of my programming skills to make the game visually appealing. I wanted the swap-position mechanic to feel like you are bending and stretching the fabric of space-time, something I had seen games like Outer Wilds and Prey do. I took a baseline screen-space ripple shader, modulated and added some chromatic aberration to achieve this effect.   
+
+<br/>
+
+<figure>
+    <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/sm/tool.png">
+    <figcaption>Fig.7 - Developing the swap effect that become core part of the visual identity for the game.</figcaption>
+</figure>
+
+<br/>
+
+Similarly, I utilized shaders to also achieve some UX goals. The link indicator showing the connection between buttons and door is crucial for both the UX of the puzzles, and also making the levels feel more dynamic. I utilized spatial shaders to build this mech effect that allowed me to quite smoothly communicate the state of any connection.
+
+
+
+I was similarly quite excited to dive into 3D lighting, its something I've wanted to explore for the longest time! I spent some time learning about proper ways to use various kinds of lighting (static/baked, dynamic, GI, probes, etc). Furthermore I explored best practices to combine them to create the desired aesthetic feel. I layered all of these effects throughout the game to create a progressive mood dictated by lighting. I also enjoyed lighting not just for aesthetics, but also to highlight key level elements and to guide player attention. 
+
+<!-- <br/>
+
+<figure>
+    <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/a7/lighting_design.gif">
+    <figcaption>Fig.9 - The various layers of lighting designed to set the scene in each level.</figcaption>
+</figure>
+
+<br/> -->
+
+
+## Closing Statement
+
+I submitted the game the the Bit-1 Student Game Design competition in Finland again, 3 years after the last time I did that. Though it didn't make it to the finals, I was quite proud of it. This project has been the best quality and scope that I have been able to accomplish solo and it was a great learning experience. I demoed the game multiple times during events at Aalto University, and its been really fun (and nerve wracking) to watch people play the game. I am again and always really grateful to everyone who played the game and gave me feedback. 
+
+<br/>
+
+
+The conclusion of this project is more of a "to be continued". I had submitted the game to the [Draknek and Friends New Voices Grant](https://grants.draknek.org) and it got selected (wooooo)! With their support, I'm continuing on the project on my free time when possible. I'm looking forward to building and sharing this with everyone. 
+
+<br/>
+
+<figure>
+    <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/sm/eternal_train.png">
+    <figcaption>Fig.10 - I got a beautiful demo station for Bit-1 '25 haha.</figcaption>
+</figure>
+
+<br/>
+
