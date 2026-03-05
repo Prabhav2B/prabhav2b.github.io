@@ -18,7 +18,7 @@ paginate:         5
 
 
 # Custom vars
-version:          0.2.0
+version:          0.2.1
 
 github:
   repo:           https://bsky.app/profile/probob.bsky.social
