@@ -32,109 +32,124 @@ excerpt: A Celeste inspired platformer with a shapeshifting twist.
 
 ## Introduction
 
-This project was initally a part of the Learning with Game Professionals (pilot) course at Aalto University. My personal goal was to build a game, network and explore the solo-preneur journey. Keeping my solo scope in mind, one big goal for me was to avoid over-innovating and prioritize feaseability. I choose to work on top of the foundation of game like Portal, The Talos Principle and Antichamber, while still expanding my skillset by exploring puzzle design, level design, technical art and lighting in 3D environments.
+Chromatic Cherry Chase is a platformer game that I developed as part of my Master's thesis at Aalto University. Thoughout my education and research, game-making has been central and with my thesis I aimed at exploring how music perception in games differ based on the cognitive demand experienced in a game. In this writeup I will mostly focus on the game itself, but for more details on the entire process, feel free to [check out my thesis](https://aaltodoc.aalto.fi/items/16b72d18-8358-4a4c-8e98-fbc06c31deea)!
 
 <br/>
 
 <figure>
-    <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/ccc/Frame 5.png">
-    <figcaption>Fig.1 - Like any good Portal-like, the project started with nailing boxes, buttons and doors.</figcaption>
+    <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/ccc/gameplay.gif">
+    <figcaption>Fig.1 - One of the platforming rooms in the game. There's a lot happening (and for a good reason haha), this version of the game was meant to be cognitively demanding in order to study the desired player experience.</figcaption>
 </figure>
 
 <br/>
 
 ## Mechanics
 
-I have developed a certain rule with puzzle game design at this point. If it doesn't work and scale on paper, it won't in engine either. So I started drafting mechanics, levels and interactions. I took a much more explorative appoach in this project, brainstorming engaging mechanics first instead of starting with a theme of narrative. 
-
-
-
-That being said, I keep feeling drawn to the idea of duality somehow. I ended up with the idea of puzzle mechanics being linked to cubes, and each cube would have 2 mechanics liked to it. This would led to designs where puzzles would have a good amount of depth and possibilities with minimal moving parts. 
+The game was designed for reesarch purposes but for me, the game being tighly designed and engaging to play was more important that it being just a research sandbox. If you are studying playing experience on a janky game, your data will not be true to what you want to understand. To keep things simple, scoped but appraochable and engaging, I worked on top of established platformer fundamentals taking inspiration from games like Celeste and Gris. Movement, wall-jumping, double-jumping and dashing were the bread and butter of design. 
 
 <br/>
 
 <figure>
     <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/ccc/Frame 6.png">
-    <figcaption>Fig.3 - Expanding the levels and exploring the dual-interaction mechanics.</figcaption>
+    <figcaption>Fig.2 - The jump and double jump mechanic. I used a simple dot indicator attached the the player to indicate when double was available vs exhausted. </figcaption>
 </figure>
 
 <figure>
     <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/ccc/Frame 7.png">
-    <figcaption>Fig.3 - Expanding the levels and exploring the dual-interaction mechanics.</figcaption>
+    <figcaption>Fig.3 - The dash mechanic that used a sprite and color change to indicate dash availability.</figcaption>
 </figure>
 
 <br/>
 
-With a physics based puzzle like this one, I found building a sandbox where I could experiment and play around in to be super useful. This was not only great for technical and programming testing, but also to be curious and playful, letting gameplay ideas naturally emerge. 
+I further designed a state switch mechanic where the player could switch between a capsule-form and a block form by holding the right mouse button or right controller trigger.
 
+<br/>
 
-## Level Design 
-
-Aether-07 is my first foray into puzzle design in 3D and that brough with it its own set of challenges and learnings. From a pure puzzle design perspective, in 2D puzzles all the information is presented to the player the moment they see the level. The solving then becomes a task of identifying that sequence or manner of mechanical steps lead you to the solution. Meanwhile when designing in 3D, discovering the puzzle space itself is a explorative process. As a designer, I got to curate how each level is framed, what the player sees and in what perspective. 
+<figure>
+    <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/ccc/Frame 5.png">
+    <figcaption>Fig.5 - Switching between the capsule and block form.</figcaption>
+</figure>
 
 <br/>
 
 
-For example, in Figure 5, my core intent was for player to discover the inital setup for the level, the button, the (death) river and the door. Once they got familair with that setup, they would explore and find the cube that they have to use to solve the puzzle tucked in a wall. In this sense, level design in games becomes closely tied to UX design and progression. The levels need to be framed in a way that player can discover its various moving parts at a digestable rate. 
+Each state would afford a different interaction with the various world elements. For example, there were certain platform that would act as solid only for a specific character form. There were also air gyseys that would lift the player up if they were in capsuke form, but have no effect on the player if they were in the block form. These ideas could be combined to allow for a broad range of skill expression and platforming challenges.
+
 
 <br/>
 
 <figure>
     <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/ccc/Frame 2.png">
-    <figcaption>Fig.5 - The levels were usually storyboarded and tested on figma before building in-engine. This allowed for better team communication and faster iterations.</figcaption>
+    <figcaption>Fig.6 - The blue platforms were only interactable in the capsule form.</figcaption>
 </figure>
 
 <br/>
 <figure>
     <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/ccc/Frame 3.png">
-    <figcaption>Fig.5 - Translating a level from sketch to greybox and adding lighting.</figcaption>
+    <figcaption>Fig.7 - Meanwhile the yellow platforms were only interactable by the block form.</figcaption>
 </figure>
 <br/>
 <figure>
     <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/ccc/Frame 4.png">
-    <figcaption>Fig.5 - Translating a level from sketch to greybox and adding lighting.</figcaption>
+    <figcaption>Fig.8 - Some of these platforms would be timed and would toogle between states at fixed intervals.</figcaption>
 </figure>
 
 <br/>
 
-Additionally, coming back to 2D puzzle design, where once you have conceptualized solution, you can just try it out. But in 3D, there is an added "step" to the execution. You have to navigate the space, move-jump-fall, and participate in the solving of design. While this can lead to a much more engaging and immersive experience, poor execution can lead to fatigue and frustration. Thorughout my design I had to actively analyze my levels from this lens to make sure that I'm striking the right balance. 
+## Onboarding
+
+The game was designed to be tested by over 200 players on an online playtesting platform. Players would get paid for testing the game and they were also meant to play the core levels with complete knowledge of the game's mechanics. As such, I had to be very deliberate with the onbording design of the game such that it onboarded players to the game as smoothly, clearly and quickly as possible.
 
 
 <br/>
 
 <figure>
     <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/ccc/image 1.png">
-    <figcaption>Fig.6 - Exploring verticality in level design.</figcaption>
+    <figcaption>Fig.9 - I used silhouettes to clearly show how mechanics and UI functioned. There the players learned and experimented with the the double jump mechanic. The hollow silhoutte encouraged players to overlap with it and try the mechanic out.</figcaption>
+</figure>
+
+<br/>
+
+<br/>
+
+<figure>
+    <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/ccc/image 3.png">
+    <figcaption>Fig.10 - Using silhouettes and collectibles to guide the players.</figcaption>
+</figure>
+
+<br/>
+
+<br/>
+
+<figure>
+    <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/ccc/image 4.png">
+    <figcaption>Fig.11 - Teaching the air-geyser mechanic and how it interacts with the 2 player states.</figcaption>
 </figure>
 
 <br/>
 
 <!-- Space as a narrative medium -->
 
-## Technical Art and Lighting
-
-This project also served as a great opportunity to develop my technical art skills. Since I was working as a solo-developer, I had to make the most of my programming skills to make the game visually appealing. I wanted the swap-position mechanic to feel like you are bending and stretching the fabric of space-time, something I had seen games like Outer Wilds and Prey do. I took a baseline screen-space ripple shader, modulated and added some chromatic aberration to achieve this effect.   
+If this was not for research, I would have left the onboarding completely text free and let the players play and learn the mechanics. But owing to research contraints, I chose to also explicitly tell the players how various mechanics operated. Covering both bases minimized any confusion in participants who have little to no experience playing platformer games.      
 
 <br/>
 
 <figure>
     <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/ccc/image 2.png">
-    <figcaption>Fig.7 - Developing the swap effect that become core part of the visual identity for the game.</figcaption>
+    <figcaption>Fig.12 - Combining silhouettes with explicit instructions.</figcaption>
 </figure>
 
 <br/>
 
-Similarly, I utilized shaders to also achieve some UX goals. The link indicator showing the connection between buttons and door is crucial for both the UX of the puzzles, and also making the levels feel more dynamic. I utilized spatial shaders to build this mech effect that allowed me to quite smoothly communicate the state of any connection.
 
+The tutorial region was designed in a way that the players could only progress if they were able to execute a mechanic sucessfully. At the same time it was designed to be forgiving and death-free to avoid any frustration or negative emotional experiences.
 
-
-I was similarly quite excited to dive into 3D lighting, its something I've wanted to explore for the longest time! I spent some time learning about proper ways to use various kinds of lighting (static/baked, dynamic, GI, probes, etc). Furthermore I explored best practices to combine them to create the desired aesthetic feel. I layered all of these effects throughout the game to create a progressive mood dictated by lighting. I also enjoyed lighting not just for aesthetics, but also to highlight key level elements and to guide player attention. 
 
 <br/>
 
 <figure>
-    <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/ccc/image 3.png">
-    <figcaption>Fig.9 - The various layers of lighting designed to set the scene in each level.</figcaption>
+    <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/ccc/onboarding.gif">
+    <figcaption>Fig.13 - Players could only progress in the tutorial if they had learned the mechanics.</figcaption>
 </figure>
 
 <br/>
@@ -142,18 +157,5 @@ I was similarly quite excited to dive into 3D lighting, its something I've wante
 
 ## Closing Statement
 
-I submitted the game the the Bit-1 Student Game Design competition in Finland again, 3 years after the last time I did that. Though it didn't make it to the finals, I was quite proud of it. This project has been the best quality and scope that I have been able to accomplish solo and it was a great learning experience. I demoed the game multiple times during events at Aalto University, and its been really fun (and nerve wracking) to watch people play the game. I am again and always really grateful to everyone who played the game and gave me feedback. 
+This game was the final game I worked on as part of my master's degree. It was challenging but fun, and I am quite happy with how it turned out. Over 200 online players tested the game and it was received positivey. People would often compare the game to Celeste or Super Meat Boy, and sometimes mention that this was the most fun "experiment" they had participated in! 
 
-<br/>
-
-
-The conclusion of this project is more of a "to be continued". I had submitted the game to the [Draknek and Friends New Voices Grant](https://grants.draknek.org) and it got selected (wooooo)! With their support, I'm continuing on the project on my free time when possible. I'm looking forward to building and sharing this with everyone. 
-
-<br/>
-
-<figure>
-    <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/ccc/image 4.png">
-    <figcaption>Fig.10 - I got a beautiful demo station for Bit-1 '25 haha.</figcaption>
-</figure>
-
-<br/>
