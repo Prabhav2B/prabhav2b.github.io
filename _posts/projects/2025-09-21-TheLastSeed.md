@@ -24,9 +24,11 @@ excerpt: A small exploration game where a dandelion seed tries to escape a cave.
 
 **My roles**: *Game Design and Programming*.
 
-<!-- **Trailer**: [https://www.youtube.com/watch?v=VqpJ3DHl15o](https://www.youtube.com/watch?v=VqpJ3DHl15o){:target="_blank"} -->
-
 **Build**: [https://prabby-patty.itch.io/the-last-seed](https://prabby-patty.itch.io/the-last-seed){:target="_blank"}
+
+**Gameplay Walkthrough**: [https://www.youtube.com/watch?v=1p1NWw4GZVU](https://www.youtube.com/watch?v=1p1NWw4GZVU){:target="_blank"}
+
+<iframe width="500" height="290" src="https://www.youtube.com/embed/1p1NWw4GZVU?si=xWepTtaoUo07-qA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <br/>
 
