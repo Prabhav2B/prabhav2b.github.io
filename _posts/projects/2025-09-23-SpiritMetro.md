@@ -35,7 +35,7 @@ excerpt: Explore a supernatural metro and meet quirky characters.
 
 ## Introduction
 
-This project was initally a part of the Learning with Game Professionals (pilot) course at Aalto University. My personal goal was to build a game, network and explore the solo-preneur journey. Keeping my solo scope in mind, one big goal for me was to avoid over-innovating and prioritize feaseability. I choose to work on top of the foundation of game like Portal, The Talos Principle and Antichamber, while still expanding my skillset by exploring puzzle design, level design, technical art and lighting in 3D environments.
+Spirit Metro was developed during the Aalto Game Jam course where students have an internal week-long game jam (that simple). We were given the theme connection and formed a team of 6 members, following which we brainstormed ideas and settled on the concept of playing as a character lost in an alien metro system. The players have to reach their destination thorough taking various train lines and seeing where it takes them. Along the way, players would explore various metro stations, meet quirky characters and help them in their respective journeys.
 
 <br/>
 
@@ -46,73 +46,61 @@ This project was initally a part of the Learning with Game Professionals (pilot)
 
 <figure>
     <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/sm/metro_ref_a.png">
-    <figcaption>Fig.1 - Like any good Portal-like, the project started with nailing boxes, buttons and doors.</figcaption>
+    <figcaption>Fig.1 - The game was inspired by the aesthetics and quirks of metro stations in Nordic countries.</figcaption>
 </figure>
 
 <br/>
 
 ## Mechanics
 
-I have developed a certain rule with puzzle game design at this point. If it doesn't work and scale on paper, it won't in engine either. So I started drafting mechanics, levels and interactions. I took a much more explorative appoach in this project, brainstorming engaging mechanics first instead of starting with a theme of narrative. 
+The core mechanical idea of the game was established quite early. There would be trains running on rough schedules through different stations that the players would be able to take. As they do, they can use their map to add station nodes and connect them with various colored lines corresponding the train lines. The goal would be to reach a specific station but to do so, players would both need to find which line goes there and find a ticket for that line through completing quests.
 
 <br/>
 
 <figure>
     <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/sm/metro_ref_b.jpg">
-    <figcaption>Fig.2 - Sketches of the early mechanics and levels.</figcaption>
+    <figcaption>Fig.2 - I did a little method acting during the project, taking the metro in a more observant manner and absorbing what characterizes the mundane but calming journey.</figcaption>
 </figure>
 
 <br/>
 
-That being said, I keep feeling drawn to the idea of duality somehow. I ended up with the idea of puzzle mechanics being linked to cubes, and each cube would have 2 mechanics liked to it. This would led to designs where puzzles would have a good amount of depth and possibilities with minimal moving parts. 
+After collaborative inital exploration, my wonderful team members took the lead on continuning to develop the design and narrative for the game while I focused on programming the core features of the game. 
 
 <br/>
 
 <figure>
     <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/sm/Map_1.png">
-    <figcaption>Fig.3 - Expanding the levels and exploring the dual-interaction mechanics.</figcaption>
+    <figcaption>Fig.3 - An initial concept of the mapping mechanic developed by Rolands and Laura.</figcaption>
 </figure>
 
 <figure>
     <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/sm/Map-without-top_3.png">
-    <figcaption>Fig.3 - Expanding the levels and exploring the dual-interaction mechanics.</figcaption>
+    <figcaption>Fig.4 - A polished version of the mapping mechanic allowing you to pick colors and see what tickets you have collected so far.  </figcaption>
 </figure>
 
 <br/>
 
-With a physics based puzzle like this one, I found building a sandbox where I could experiment and play around in to be super useful. This was not only great for technical and programming testing, but also to be curious and playful, letting gameplay ideas naturally emerge. 
 
+## Programming and Development
 
-## Level Design 
-
-Aether-07 is my first foray into puzzle design in 3D and that brough with it its own set of challenges and learnings. From a pure puzzle design perspective, in 2D puzzles all the information is presented to the player the moment they see the level. The solving then becomes a task of identifying that sequence or manner of mechanical steps lead you to the solution. Meanwhile when designing in 3D, discovering the puzzle space itself is a explorative process. As a designer, I got to curate how each level is framed, what the player sees and in what perspective. 
-
-<br/>
-
-
-For example, in Figure 5, my core intent was for player to discover the inital setup for the level, the button, the (death) river and the door. Once they got familair with that setup, they would explore and find the cube that they have to use to solve the puzzle tucked in a wall. In this sense, level design in games becomes closely tied to UX design and progression. The levels need to be framed in a way that player can discover its various moving parts at a digestable rate. 
+My process started with developing the character controller. Given the Jam setting, I didn't want to spend too much time on it but I did still want to make sure that it felt good to control. Feeling good to me means feeling appropriate, I tuned the character controller to ensure it doesn't feel like the character is zipping around the world, rather it fits the calm and grounded experience that we are building.
 
 <br/>
 
 <figure>
     <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/sm/movement.gif">
-    <figcaption>Fig.5 - The levels were usually storyboarded and tested on figma before building in-engine. This allowed for better team communication and faster iterations.</figcaption>
+    <!-- <figcaption>Fig.5 - The levels were usually storyboarded and tested on figma before building in-engine. This allowed for better team communication and faster iterations.</figcaption> -->
 </figure>
 
 <br/>
 <figure>
     <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/sm/pausechamp.gif">
-    <figcaption>Fig.5 - Translating a level from sketch to greybox and adding lighting.</figcaption>
-</figure>
-<br/>
-<figure>
-    <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/sm/jumpbug.gif">
-    <figcaption>Fig.5 - Translating a level from sketch to greybox and adding lighting.</figcaption>
+    <figcaption>Fig.5 - The initial movement development, I setting on the framing of levels quite early on and made sure the character felt smooth and appropriate to control.</figcaption>
 </figure>
 
 <br/>
 
-Additionally, coming back to 2D puzzle design, where once you have conceptualized solution, you can just try it out. But in 3D, there is an added "step" to the execution. You have to navigate the space, move-jump-fall, and participate in the solving of design. While this can lead to a much more engaging and immersive experience, poor execution can lead to fatigue and frustration. Thorughout my design I had to actively analyze my levels from this lens to make sure that I'm striking the right balance. 
+Additionally, nailing the feel of the metro was quite important for me too! One of the first things I prototyped in the metro was the subtle rumble that characterizes the trains movement. Its easy to miss and many players might not even notice it, but too it was **essential**. Its not a metro without it's shakes and rumbles, it is subtly calming in it's own way. 
 
 
 <br/>
@@ -124,51 +112,48 @@ Additionally, coming back to 2D puzzle design, where once you have conceptualize
 
 <br/>
 
-<!-- Space as a narrative medium -->
+I further developed the entire metro system which involved each metro attempting to enter a station at their its own interval, otherwise entering a waiting queue. Waiting was thus baked into the mechanics and design of game. Players would often spend time waiting for the right line going in the right direction to arrive. This created spaces where players can explore, talk to character, or just wait. Though this might be every player's cup of team, it was an intentional design choice by us becausae afterall what is a metro journey experience without some waiting.
 
-## Technical Art and Lighting
+<br/>
 
-This project also served as a great opportunity to develop my technical art skills. Since I was working as a solo-developer, I had to make the most of my programming skills to make the game visually appealing. I wanted the swap-position mechanic to feel like you are bending and stretching the fabric of space-time, something I had seen games like Outer Wilds and Prey do. I took a baseline screen-space ripple shader, modulated and added some chromatic aberration to achieve this effect.   
+
+<!-- Add gif of trains and their schedules -->
+
+## Tools and Support Programming
+
+In addition to programming the core mechanics, I worked with our artists and sound designers to build quick tools that they could use in order to implement their assets. It was important to be available to everyone who needed help with implementations or bug fixes so no one felt blocked.
+
+<br/>
+<figure>
+    <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/sm/jumpbug.gif">
+    <figcaption>Fig.7 - Working with our artists Nils and Jenni to setup the character animations and metro sprites.</figcaption>
+</figure>
+
+<br/>
+
+
+I made an effort to keep the systems designer and no-code friendly. For example, for the metro system was designed abstractly to create a schedule based on whatever the designers specified. The designers could define line colors, their respective operating stations and operation intervals from the editor without having to work with code.
 
 <br/>
 
 <figure>
     <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/sm/tool.png">
-    <figcaption>Fig.7 - Developing the swap effect that become core part of the visual identity for the game.</figcaption>
+    <figcaption>Fig.8 - The metro line setup tool.</figcaption>
 </figure>
 
 <br/>
 
-Similarly, I utilized shaders to also achieve some UX goals. The link indicator showing the connection between buttons and door is crucial for both the UX of the puzzles, and also making the levels feel more dynamic. I utilized spatial shaders to build this mech effect that allowed me to quite smoothly communicate the state of any connection.
-
-
-
-I was similarly quite excited to dive into 3D lighting, its something I've wanted to explore for the longest time! I spent some time learning about proper ways to use various kinds of lighting (static/baked, dynamic, GI, probes, etc). Furthermore I explored best practices to combine them to create the desired aesthetic feel. I layered all of these effects throughout the game to create a progressive mood dictated by lighting. I also enjoyed lighting not just for aesthetics, but also to highlight key level elements and to guide player attention. 
-
-<!-- <br/>
-
-<figure>
-    <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/a7/lighting_design.gif">
-    <figcaption>Fig.9 - The various layers of lighting designed to set the scene in each level.</figcaption>
-</figure>
-
-<br/> -->
 
 
 ## Closing Statement
 
-I submitted the game the the Bit-1 Student Game Design competition in Finland again, 3 years after the last time I did that. Though it didn't make it to the finals, I was quite proud of it. This project has been the best quality and scope that I have been able to accomplish solo and it was a great learning experience. I demoed the game multiple times during events at Aalto University, and its been really fun (and nerve wracking) to watch people play the game. I am again and always really grateful to everyone who played the game and gave me feedback. 
-
-<br/>
-
-
-The conclusion of this project is more of a "to be continued". I had submitted the game to the [Draknek and Friends New Voices Grant](https://grants.draknek.org) and it got selected (wooooo)! With their support, I'm continuing on the project on my free time when possible. I'm looking forward to building and sharing this with everyone. 
+Spirit metro is definitely the biggest jam project that I have worked on. It was so fun to work with my team and pulling off an experience true to our combined vision!
 
 <br/>
 
 <figure>
     <img style="text-align: left ; width: calc(100% - 20px) ; height:auto; box-shadow: -5px 5px 15px #888888;;" src="/assets/media/sm/eternal_train.png">
-    <figcaption>Fig.10 - I got a beautiful demo station for Bit-1 '25 haha.</figcaption>
+    <figcaption>Fig.9 - What is a Jam game without some fun commit messages?</figcaption>
 </figure>
 
 <br/>
