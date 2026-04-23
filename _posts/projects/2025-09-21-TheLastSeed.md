@@ -5,7 +5,7 @@ cover: 'assets/gifs/tls/cave.gif'
 navigation: True
 title: The Last Seed
 date: 2025-09-26
-tags: game, exploration, highlight
+tags: exploration, narrative
 class: project-template
 subclass: 'project'
 author: probob

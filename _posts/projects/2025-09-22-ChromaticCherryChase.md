@@ -5,7 +5,7 @@ cover: 'assets/gifs/ccc/jellyjump.gif'
 navigation: True
 title: Chromatic Cherry Chase
 date: 2025-09-26
-tags: game, platformer, research, highlight
+tags: action-platformer, research
 class: project-template
 subclass: 'project'
 author: probob

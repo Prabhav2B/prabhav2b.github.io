@@ -5,7 +5,7 @@ cover: 'assets/gifs/spirit/sp_metro.gif'
 navigation: True
 title: Spirit Metro
 date: 2025-09-26
-tags: game, exploration, highlight
+tags: narrative, exploration
 class: project-template
 subclass: 'project'
 author: probob

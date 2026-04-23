@@ -4,7 +4,9 @@
 
     <h1 class="header">Welcome!</h1>
 
-    <p>Hey, I'm Prabhav! Welcome to my personal/portfolio website. Feel free to check out my highlight project below or visit my <a href="https://prabby-patty.itch.io" target="_blank">Itch.io</a> page to check out all my games. I'm also on <a href="https://bsky.app/profile/probob.bsky.social" target="_blank">Bluesky</a>, though I'm not as active as I'd like to be. You can contact me by email at <a href="mailto:prabhav2b@gmail.com">prabhav2b@gmail.com</a>.</p>
+    <p>Hey, I'm Prabhav! Welcome to my personal/portfolio website. Feel free to check out my highlight project belows or check out all my game on my <a href="https://prabby-patty.itch.io" target="_blank">Itch.io</a>.</p>
+    
+    <p> I'm also on <a href="https://bsky.app/profile/probob.bsky.social" target="_blank">Bluesky</a>, though I'm not as active as I'd like to be. You can contact me by email at <a href="mailto:prabhav2b@gmail.com">prabhav2b@gmail.com</a>.</p>
 
 
     <hr class="solid">
@@ -12,7 +14,7 @@
     <h2 class="header">Highlight Projects</h2>
 
     {% for project in paginator.posts %}
-        {% if project.class == "project-template" and project.tags contains "highlight" %}
+        {% if project.class == "project-template"%}
             <article class="project-card-img {{ page.class }}{% unless project.cover %} no-image{% endunless %}">
                 {% if project.cover %}
                     <img class="project-card-image" src="{{site.baseurl}}{{project.cover}}"> 

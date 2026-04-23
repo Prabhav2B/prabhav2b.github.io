@@ -5,7 +5,7 @@ cover: 'assets/gifs/sps/move_block.gif'
 navigation: True
 title: Shadow Puppy Shenanigans
 date: 2025-09-26
-tags: game, puzzle, highlight
+tags: block-pushing, puzzle
 class: project-template
 subclass: 'project'
 author: probob
