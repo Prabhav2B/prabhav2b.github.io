@@ -5,7 +5,7 @@ title: About
 
 <img style="float: right; width:45%; height:auto; box-shadow: -5px 5px 15px #888888; margin-left: 50px;" src="/assets/images/me/P1040653.JPG">
 
-Hey, I'm *Prabhav Bhatnagar*! I am a game designer and developer from India, currently based in Finland. I am currently a [doctoral researcher exploring game feel](https://scholar.google.com/citations?user=AmMe8_EAAAAJ&hl=en) at [Aalto University](https://www.aalto.fi/en/people/prabhav-bhatnagar), from where I previously completed a Master's in Game Design and Production. While research is my day job, I spend my spare hours working as an independent developer on my game Aether-07 under the moniker of SideLine Studio!
+Hey, I'm *Prabhav Bhatnagar*! I am a game designer and developer from India, currently based in Finland. I am currently Game Programmer at [BIT ODD](https://bit-odd.com). I spend my spare hours wrapping up my [doctoral researcher exploring game feel](https://scholar.google.com/citations?user=AmMe8_EAAAAJ&hl=en) at [Aalto University](https://www.aalto.fi/en/people/prabhav-bhatnagar), from where I previously completed a Master's in Game Design and Production. The rest of my spare hours go towards developing my game [Aether-07](https://store.steampowered.com/app/4715830/Aether07_Demo/) under the moniker of SideLine Studio!
 
 I find it fun to design games of various genres and scopes, and I am particularly enjoying puzzle design at the moment. I've also been exploring, learning, and playing with shader development and technical-art.
 
@@ -13,14 +13,14 @@ Outside of game design, I like to play guitar and make music when possible. I ha
 
 Thanks for reading!
 
-Reccomendations of June/July: 
+Reccomendations of August/September: 
 
 <ul>
-<li>A bunch of games actually,  <a style="overflow-wrap: break-word;" href="https://store.steampowered.com/app/1263240/Skate_Story/" target="_blank">Skate Story</a> (its everything I hoped it would be haha), <a style="overflow-wrap: break-word;" href="https://store.steampowered.com/app/1569580/Blue_Prince/" target="_blank">Blue Prince</a> (this game keeps on giving), and <a style="overflow-wrap: break-word;" href="https://store.steampowered.com/app/3065800/Marathon/" target="_blank">Marathon</a> (the music, aesthics and sound design is sooo gooood).</li>
-<li>I've been seeing everyone around me talk about Obsession, so this is more of a recommendation for myself to go for a movie lol.</li> 
-<li>I've been listeining to so much of Oklou, her recent album Choke Enough is amazing but I can easily recommend her entire discography: </li>
+<li>Soooo <a style="overflow-wrap: break-word;" href="https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/" target="_blank">Clair Obscur: Expedition 33</a> really lived up to the hype (yes I know I'm a year late). I do wish there was more character narrative stuff but that's me wanting a cherry on top of my cake. I'll be thinking about this game for a whiiilleee. Also go listen to its soundtrack, its really goood.</li>
+<li>Board game recc: HOLY SHIT <a style="overflow-wrap: break-word;" href="https://boardgamegeek.com/boardgame/359871/arcs" target="_blank">ARCS</a>, its literally eveything I love, sci-fi, deep but elegant strategy, trick-taking, cute but cutthroat aliens. PEAK.</li> 
+<li>Tiffany Day's HALO is FIREEEE. I've listen to the whole album multiple times and its just a vibeee. A lot (if not all) of the songs about not so subtly around the theme of trying to fit in, self-conciousness and self-discovery, and reflecting on life ... all wrapped in the most fire hyperpop production.: </li>
 </ul>
 
-<iframe src="https://embed.tidal.com/albums/415961069" width="500" height="275" allow="encrypted-media; fullscreen; clipboard-write https://embed.tidal.com; web-share" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox" style="color-scheme: light dark" title="TIDAL Embed Player" />
+<iframe src="https://embed.tidal.com/albums/494051774" width="500" height="275" allow="encrypted-media; fullscreen; clipboard-write https://embed.tidal.com; web-share" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox" style="color-scheme: light dark" title="TIDAL Embed Player" />
 
 
