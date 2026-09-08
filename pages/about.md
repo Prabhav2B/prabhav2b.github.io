@@ -5,7 +5,7 @@ title: About
 
 <img style="float: right; width:45%; height:auto; box-shadow: -5px 5px 15px #888888; margin-left: 50px;" src="/assets/images/me/P1040653.JPG">
 
-Hey, I'm *Prabhav Bhatnagar*! I am a game designer and developer from India, currently based in Finland. I am currently Game Programmer at [BIT ODD](https://bit-odd.com). I spend my spare hours wrapping up my [doctoral researcher exploring game feel](https://scholar.google.com/citations?user=AmMe8_EAAAAJ&hl=en) at [Aalto University](https://www.aalto.fi/en/people/prabhav-bhatnagar), from where I previously completed a Master's in Game Design and Production. The rest of my spare hours go towards developing my game [Aether-07](https://store.steampowered.com/app/4715830/Aether07_Demo/) under the moniker of SideLine Studio!
+Hey, I'm *Prabhav Bhatnagar*! I am a game designer and developer from India, currently based in Finland. I am currently a Game Programmer at [BIT ODD](https://bit-odd.com). I spend my spare hours wrapping up my [doctoral researcher exploring game feel](https://scholar.google.com/citations?user=AmMe8_EAAAAJ&hl=en) at [Aalto University](https://www.aalto.fi/en/people/prabhav-bhatnagar), from where I previously completed a Master's in Game Design and Production. The rest of my spare hours go towards developing my game [Aether-07](https://store.steampowered.com/app/4715830/Aether07_Demo/) under the moniker of SideLine Studio!
 
 I find it fun to design games of various genres and scopes, and I am particularly enjoying puzzle design at the moment. I've also been exploring, learning, and playing with shader development and technical-art.
 
